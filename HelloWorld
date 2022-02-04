@@ -1,0 +1,262 @@
+import java.util.Scanner;
+import java.lang.Math;
+class HelloWorld
+{
+	public static void main(String[]args)
+	{
+		
+		
+		Scanner nameReader = new Scanner(System.in);
+		System.out.print("Enter your name: "); 
+		String name = nameReader.next();
+		
+		if (name.equals("Ryan") || name.equals("ryan"))
+		{
+			System.out.println();
+			System.out.println("Hello Ryan, welcome to your personnal calculator!");
+		}
+		else 
+		{
+			destroyer();
+		}
+		System.out.println();
+		
+		calculator();
+		
+		
+		
+			
+		}
+		
+	static void destroyer()
+	{
+		System.out.println();
+		System.out.println("IMPOSTER!!! BEGONE AND NEVER COME BACK");
+		System.exit(1);
+	}
+	static void calculator()
+	{
+		double num1 = 0;
+		double num2 = 0;
+		double num3 = 0;
+		double num4 = 0;
+		double num5 = 0;
+		double num6 = 0;
+		int i = 0;
+		int n = 10;
+		String operation;
+		String numOfCalc;
+		boolean x = true;
+		
+		Scanner input = new Scanner(System.in);
+		
+		Scanner input2 = new Scanner(System.in);
+		
+		System.out.print("How many numbers are you calculating? (Min. 2, Max. 5): ");
+		numOfCalc = input2.next();
+		
+		
+		Scanner op = new Scanner(System.in);
+		
+		
+		
+		
+		if (numOfCalc.equals("2"))
+		{
+			System.out.print("Enter first number: ");
+			num1 = input.nextDouble();
+			System.out.print("Enter second number: ");
+			num2 = input.nextDouble();
+			System.out.print("Enter operation: ");
+			operation = op.next();
+					
+			if (operation.equals("+"))
+			{
+				System.out.println(num1 + num2);
+				recalculate();
+			}
+			else if (operation.equals("-"))
+			{
+				System.out.println(num1 - num2);
+				recalculate();
+			}
+			else if (operation.equals("*"))
+			{
+				System.out.println(num1 * num2);
+				recalculate();
+			}
+			else if (operation.equals("/"))
+			{
+				System.out.println(num1 / num2);
+				recalculate();
+			}
+			else if (operation.equals("^"))
+			{
+				System.out.println(Math.pow(num1, num2));
+				recalculate();
+			}
+			else
+			{
+				System.out.println("Invalid operation");
+				recalculate();
+			}
+			}
+		else if (numOfCalc.equals("3"))
+		{
+			System.out.print("Enter first number: ");
+			num1 = input.nextDouble();
+			System.out.print("Enter second number: ");
+			num2 = input.nextDouble();
+			System.out.print("Enter third number: ");
+			num3 = input.nextDouble();
+			System.out.print("Enter operation: ");
+			operation = op.next();
+			
+			if (operation.equals("+"))
+			{
+				System.out.println(num1 + num2 + num3);
+				recalculate();
+			}
+			else if (operation.equals("-"))
+			{
+				System.out.println(num1 - num2 - num3);
+				recalculate();
+			}
+			else if (operation.equals("*"))
+			{
+				System.out.println(num1 * num2 * num3);
+				recalculate();
+			}
+			else if (operation.equals("/"))
+			{
+				System.out.println(num1 / num2 / num3);
+				recalculate();
+			}
+			else
+			{
+				System.out.println("Invalid operation");
+				recalculate();
+			}
+		}
+		else if (numOfCalc.equals("4"))
+		{
+			System.out.print("Enter first number: ");
+			num1 = input.nextDouble();
+			System.out.print("Enter second number: ");
+			num2 = input.nextDouble();
+			System.out.print("Enter third number: ");
+			num3 = input.nextDouble();
+			System.out.print("Enter fourth number: ");
+			num4 = input.nextDouble();
+			System.out.print("Enter operation: ");
+			operation = op.next();
+			
+			
+			if (operation.equals("+"))
+			{
+				System.out.println(num1 + num2 + num3 + num4);
+				recalculate();
+			}
+			else if (operation.equals("-"))
+			{
+				System.out.println(num1 - num2 - num3 - num4);
+				recalculate();
+			}
+			else if (operation.equals("*"))
+			{
+				System.out.println(num1 * num2 * num3 * num4);
+				recalculate();
+			}
+			else if (operation.equals("/"))
+			{
+				System.out.println(num1 / num2 * num3 * num4);
+				recalculate();
+			}
+
+			else
+			{
+				System.out.println("Invalid operation");
+				recalculate();
+			}
+		}
+		else if (numOfCalc.equals("5"))
+		{
+			System.out.print("Enter first number: ");
+			num1 = input.nextDouble();
+			System.out.print("Enter second number: ");
+			num2 = input.nextDouble();
+			System.out.print("Enter third number: ");
+			num3 = input.nextDouble();
+			System.out.print("Enter fourth number: ");
+			num4 = input.nextDouble();
+			System.out.print("Enter fifth number: ");
+			num5 = input.nextDouble();
+			System.out.print("Enter operation: ");
+			operation = op.next();
+			
+			if (operation.equals("+"))
+			{
+				System.out.println(num1 + num2 + num3 + num4 + num5);
+				recalculate();
+			}
+			else if (operation.equals("-"))
+			{
+				System.out.println(num1 - num2 - num3 - num4 - num5);
+				recalculate();
+			}
+			else if (operation.equals("*"))
+			{
+				System.out.println(num1 * num2 * num3 * num4 * num5);
+				recalculate();
+			}
+			else if (operation.equals("/"))
+			{
+				System.out.println(num1 / num2 / num3 / num4 / num5);
+				recalculate();
+			}
+			else
+			{
+				System.out.println("Invalid operation");
+				recalculate();
+			}
+		}
+		else 
+		{
+			System.out.println("YOU HAVE TYPED THE WRONG THING PREPARE TO DIE");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			System.out.println("STAB");
+			
+    }
+	}
+	static void recalculate()
+	{
+		Scanner replay = new Scanner(System.in);
+		System.out.println();
+		System.out.print("Would you like to calculate again? ");
+		String yesno = replay.next();
+		
+		if (yesno.equals("yes") || yesno.equals("Yes"))
+		{
+			calculator();
+		}
+		else
+		{
+			System.out.println();
+			System.out.println("Thank you for using my calculator, come back anytime!");
+			System.exit(1);
+		}
+	}
+}
+
+
+
+
+
